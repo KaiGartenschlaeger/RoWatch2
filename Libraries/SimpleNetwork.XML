@@ -1,0 +1,733 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleNetwork</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleNetwork.BinaryMessageReader">
+            <summary>
+            Dient zum auslesen von Binärnachrichten.
+            </summary>
+            <example>
+            Dieses Beispiel demonstriert die Verwendung des BinaryMessageReader.
+            
+            <code>
+            using (BinaryMessageReader reader = new BinaryMessageReader(message.Buffer))
+            {
+                int value1 = reader.ReadByte();
+                string value2 = reader.ReadString();
+            }
+            </code> 
+            </example>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.#ctor(System.Byte[])">
+            <summary>
+            Dient zum auslesen von Binärnachrichten.
+            </summary>
+            <param name="buffer">Der Datenpuffer der Nachricht.</param>
+        </member>
+        <member name="P:SimpleNetwork.BinaryMessageReader.AvaibleBytes">
+            <summary>
+            Liefert die verbleibende Anzahl in Bytes, die sich noch im Puffer befinden.
+            </summary>
+            <value>Ein long der die Anzahl der verbleibenden Daten in Bytes angibt.</value>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadBool">
+            <summary>
+            Liest einen bool aus der Nachricht.
+            </summary>
+            <returns><c>bool</c>, oder <c>false</c> falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadByte">
+            <summary>
+            Liest einen byte aus der Nachricht.
+            </summary>
+            <returns>byte, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadBytes(System.Int32)">
+            <summary>
+            Liest die angegebene Menge an byte aus der Nachricht.
+            </summary>
+            <returns>bytes, oder ein leeres Array falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadSByte">
+            <summary>
+            Liest einen sbyte aus der Nachricht.
+            </summary>
+            <returns>sbyte, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadChar">
+            <summary>
+            Liest einen char aus der Nachricht.
+            </summary>
+            <returns>char, oder '\0' falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadChars(System.Int32)">
+            <summary>
+            Liest die angegebene Menge an char aus der Nachricht.
+            </summary>
+            <returns>chars, oder ein leeres Array falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadShort">
+            <summary>
+            Liest einen short aus der Nachricht.
+            </summary>
+            <returns>short, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadUShort">
+            <summary>
+            Liest einen ushort aus der Nachricht.
+            </summary>
+            <returns>ushort, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadInt">
+            <summary>
+            Liest einen int aus der Nachricht.
+            </summary>
+            <returns>int, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadUInt">
+            <summary>
+            Liest einen uint aus der Nachricht.
+            </summary>
+            <returns>uint, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadLong">
+            <summary>
+            Liest einen long aus der Nachricht.
+            </summary>
+            <returns>long, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadULong">
+            <summary>
+            Liest einen ulong aus der Nachricht.
+            </summary>
+            <returns>ulong, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadDouble">
+            <summary>
+            Liest einen double aus der Nachricht.
+            </summary>
+            <returns>double, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadFloat">
+            <summary>
+            Liest einen float aus der Nachricht.
+            </summary>
+            <returns>float, oder 0 falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.ReadString">
+            <summary>
+            Liest einen string aus der Nachricht.
+            </summary>
+            <returns>string, oder ein leerer string falls keine weiteren Daten vorhanden sind.</returns>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageReader.Dispose">
+            <summary>
+            Verwendete Ressourcen freigeben.
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.NetworkSocket">
+            <summary>
+            Stellt einen erweiterten Netzwerksocket dar.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.NetworkSocket.#ctor(System.Net.Sockets.Socket)">
+            <summary>
+            Stellt einen erweiterten Netzwerksocket dar.
+            </summary>
+            <param name="socket">Socket</param>
+        </member>
+        <member name="P:SimpleNetwork.NetworkSocket.Socket">
+            <summary>
+            Liefert den Socket.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkSocket.ReceivedBytes">
+            <summary>
+            Liefert die Anzahl an Bytes, die dieser Socket empfangen hat.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkSocket.SendedBytes">
+            <summary>
+            Liefert die Anzahl an Bytes, die dieser Socket gesendet hat.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkSocket.EndPoint">
+            <summary>
+            Liefert den Endpunkt des Sockets.
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.NetworkMessage">
+            <summary>
+            Stellt eine Netzwerknachricht dar.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.NetworkMessage.#ctor(SimpleNetwork.NetworkMessageType,System.Int64,System.String,System.Byte[])">
+            <summary>
+            Stellt eine Netzwerknachricht dar.
+            </summary>
+            <param name="type">Typ der Nachricht.</param>
+            <param name="client">Client, der das Ereigniss gesendet hat.</param>
+            <param name="endPoint">Der Endpunkt, von dem die Nachricht stammt.</param>
+            <param name="buffer">Byte-Array, das die gesendeten Daten enthält.</param>
+        </member>
+        <member name="M:SimpleNetwork.NetworkMessage.#ctor(SimpleNetwork.NetworkMessageType,System.Int64,System.String,System.Byte[],System.UInt16,System.String[])">
+            <summary>
+            Stellt eine Netzwerknachricht dar.
+            </summary>
+            <param name="type">Typ der Nachricht.</param>
+            <param name="client">Client, der das Ereigniss gesendet hat.</param>
+            <param name="buffer">Byte-Array, das die gesendeten Daten enthält.</param>
+            <param name="id">ID (0 - 999) der formatierten Nachricht.</param>
+            <param name="endPoint">Der Endpunkt, von dem die Nachricht stammt.</param>
+            <param name="parameter">Parameter der formatierten Nachricht.</param>
+        </member>
+        <member name="P:SimpleNetwork.NetworkMessage.Type">
+            <summary>
+            Liefert den Typ, der Nachricht.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkMessage.Client">
+            <summary>
+            Liefert den Client, der die Nachricht versendet hat.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkMessage.Buffer">
+            <summary>
+            Liefert die Daten der Nachricht.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkMessage.ID">
+            <summary>
+            Liefert die ID einer formatierten Nachricht.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkMessage.Parameter">
+            <summary>
+            Liefert die Parameter einer formatierten Nachricht.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkMessage.ReceiveDateTime">
+            <summary>
+            Liefert das Datum sowie die Zeit, als die Nachricht empfangen wurde.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkMessage.EndPoint">
+            <summary>
+            Liefert den Endpunkt, des Clients, der die Nachricht gesendet hat.
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.NetworkMessageType">
+            <summary>
+            Stellt den Typ der Nachricht dar.
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.Connected">
+            <summary>
+            Verbindung wurde aufgebaut. (Server, Client)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.ConnectionFailed">
+            <summary>
+            Verbindung fehlgeschlagen (Client)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.Disconnected">
+            <summary>
+            Verbindung wurde unterbrochen. (Server, Client)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.ServerStarted">
+            <summary>
+            Server wurde gestartet (Server)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.ServerStartFailed">
+            <summary>
+            Server konnte nicht gestartet werden (Server)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.ServerStoped">
+            <summary>
+            Server wurde beendet (Server)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.Message">
+            <summary>
+            Eingehende Nachricht (Server, Client)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.FormatedMessage">
+            <summary>
+            Eingehende formatierte Nachricht (Server, Client)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.Debug">
+            <summary>
+            Debugmeldung (Server, Client)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.Exception">
+            <summary>
+            Fehlermeldung (Server, Client)
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkMessageType.ExitRequest">
+            <summary>
+            Anfrage zum Beenden der Anwendung (Server, Client)
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.NetworkPeer">
+            <summary>
+            Stellt die Basisklasse für Socketbasierte TCP Komponenten dar.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.#ctor">
+            <summary>
+            Stellt die Basisklasse für Socketbasierte TCP Komponenten dar.
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.mainSocket">
+            <summary>
+            Der Sockel der verwendet wird.
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.encoding">
+            <summary>
+            Das Encoding für Texte.
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.password">
+            <summary>
+            Passwort für Verschlüsselung.
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.thread">
+            <summary>
+            Hauptthread, der auf eingehende Nachrichten lauscht.
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.ipEndPoint">
+            <summary>
+            Der Endpunkt
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.enableDebuging">
+            <summary>
+            Debugging
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.messageOptions">
+            <summary>
+            Nachrichten-Einstellungen
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.NetworkPeer.MessageDataType">
+            <summary>
+            Nachrichten-Datentyp
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.MessageDataType.Bytes">
+            <summary>
+            Rohdaten
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.MessageDataType.FormatedMessage">
+            <summary>
+            Formatierte Nachricht
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.NetworkPeer.NetworkMessageOptions">
+            <summary>
+            Nachrichten-Einstellungen
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.NetworkMessageOptions.None">
+            <summary>
+            Standard
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.NetworkMessageOptions.Cliphered">
+            <summary>
+            Verschlüsselt
+            </summary>
+        </member>
+        <member name="F:SimpleNetwork.NetworkPeer.NetworkMessageOptions.Compressed">
+            <summary>
+            Komprimiert
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.Encoding">
+            <summary>
+            Liefert die Zeichenkodierung für eingehende und ausgehende Nachrichten, oder legt diese fest.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.TotalReceivedBytes">
+            <summary>
+            Liefert die Menge der gesamten Bytes die empfangen wurden.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.TotalSendedBytes">
+            <summary>
+            Liefert die Menge der gesamten Bytes die gesendet wurden.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.Debuging">
+            <summary>
+            Liefert einen Wert, der angibt, ob Debugmeldungen eingeschaltet sind.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.IPAddress">
+            <summary>
+            Liefert die IPAdresse.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.Port">
+            <summary>
+            Liefert den Port.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.ClipheringKey">
+            <summary>
+            Legt das Passwort zum verschlüsseln und entschlüsseln von Nachrichten fest.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.Cliphering">
+            <summary>
+            Liefert einen Wert der angibt ob Nachrichten verschlüsselt werden, oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.NetworkPeer.Compressing">
+            <summary>
+            Liefert einen Wert, der angibt, ob Nachrichten komprimiert werden, oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.EnqueueMessage(SimpleNetwork.NetworkMessage)">
+            <summary>
+            Fügt die Nachricht in der Warteschlange hinzu, und signalisiert das eine neue Nachricht eingetroffen ist.
+            </summary>
+            <param name="message">Netzwerknachricht, die hinzugefügt wird.</param>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.GetMessage">
+            <summary>
+            Wartet auf die nächste eintreffende Nachricht und gibt diese zurück.
+            </summary>
+            <returns>Die eingetroffene Nachricht</returns>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.GetAsyncMessage">
+            <summary>
+            Liefert die nächste eintreffende Nachricht.
+            </summary>
+            <returns>Liefert eine Nachricht, oder null falls keine vorhanden ist.</returns>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.FillBuffer(SimpleNetwork.NetworkSocket,System.Byte[])">
+            <summary>
+            Wartet auf eingehende Daten von dem angegebenen Socket, bis das Array vollkommen gefüllt ist.
+            </summary>
+            <param name="socket">Das Socket, von dem empfangen wird.</param>
+            <param name="buffer">Das Byte-Array, das vollständig befüllt werden soll.</param>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.GetNextMessage(SimpleNetwork.NetworkSocket)">
+            <summary>
+            Liefert die nächste verfügbare Nachricht, oder null falls die Verbindung abbricht.
+            </summary>
+            <param name="socket">Der Socket, von dem die Nachricht erwartet wird.</param>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.SendData(SimpleNetwork.NetworkSocket,SimpleNetwork.NetworkPeer.MessageDataType,System.Byte[])">
+            <summary>
+            Sendet Daten an den angegebenen Socket.
+            </summary>
+            <param name="socket">Socket, an dem die Daten gesendet werden.</param>
+            <param name="type">Typ der Nachricht, die versendet wird.</param>
+            <param name="data">Daten, die gesendet werden.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.SendFormatedMessage(SimpleNetwork.NetworkSocket,System.UInt16,System.String[])">
+            <summary>
+            Sendet eine formatierte Zeichenkette an den angegebenen Socket.
+            </summary>
+            <param name="socket">Socket, an dem die formatierte Zeichenkette gesendet wird.</param>
+            <param name="id">ID der Nachricht.</param>
+            <param name="parameter">Beliebige Anzahl an Parametern.</param>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.Send(SimpleNetwork.NetworkSocket,SimpleNetwork.NetworkPeer.MessageDataType,System.Byte[])">
+            <summary>
+            Versendet Daten über einen Socket.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.CompressData(System.Byte[])">
+            <summary>
+            Komprimiert ein Array.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.NetworkPeer.DecompressData(System.Byte[])">
+            <summary>
+            Dekomprimiert ein Array.
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.BinaryMessageWriter">
+            <summary>
+            Dient zum erstellen einer Binärnachricht.
+            </summary>
+            <example>
+            Dieses Beispiel zeigt die Verwendung des BinaryMessageWriter.
+            
+            <code>
+            using (BinaryMessageWriter writer = new BinaryMessageWriter(server.Encoding))
+            {
+                writer.WriteByte(1);
+                writer.WriteString("Server will be close in 5 Minutes!");
+                
+                server.Send(0, writer.GetBuffer());
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.#ctor(System.Text.Encoding)">
+            <summary>
+            Dient zum erstellen einer Binärnachricht.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.BinaryMessageWriter.BufferLength">
+            <summary>
+            Liefert die bisherige Länge in Bytes, die sich im Puffer befinden.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.GetBuffer">
+            <summary>
+            Liefert die geschriebenen Daten aus dem Puffer.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteBool(System.Boolean)">
+            <summary>
+            Schreibt einen bool in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteByte(System.Byte)">
+            <summary>
+            Schreibt einen byte in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteBytes(System.Byte[])">
+            <summary>
+            Schreibt die angegebene Menge an Bytes in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteSByte(System.SByte)">
+            <summary>
+            Schreibt einen sbyte in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteChar(System.Char)">
+            <summary>
+            Schreibt einen char in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteChars(System.Char[])">
+            <summary>
+            Schreibt die angegebene Menge an char in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteShort(System.Int16)">
+            <summary>
+            Schreibt einen short in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteUShort(System.UInt16)">
+            <summary>
+            Schreibt einen ushort in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteInt(System.Int32)">
+            <summary>
+            Schreibt einen int in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteUInt(System.UInt32)">
+            <summary>
+            Schreibt einen uint in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteLong(System.Int64)">
+            <summary>
+            Schreibt einen long in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteULong(System.UInt64)">
+            <summary>
+            Schreibt einen ulong in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteDouble(System.Double)">
+            <summary>
+            Schreibt einen double in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteFloat(System.Single)">
+            <summary>
+            Schreibt einen float in die Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.WriteString(System.String)">
+            <summary>
+            Schreibt einen string in die Nachricht.
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:SimpleNetwork.BinaryMessageWriter.Dispose">
+            <summary>
+            Verwendete Ressourcen freigeben.
+            </summary>
+        </member>
+        <member name="T:SimpleNetwork.TCPClient">
+            <summary>
+            Stellt einen TCP-Client zur Verfügung.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.TCPClient.Connected">
+            <summary>
+            Liefert einen Wert, der angibt, ob Daten versendet werden können.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPClient.#ctor">
+            <summary>
+            Stellt einen TCP-Client zur Verfügung.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPClient.Connect(System.Net.IPAddress,System.Int32)">
+            <summary>
+            Stellt die Verbindung mit dem Server her, und wartet auf eingehende Daten.
+            </summary>
+            <param name="address">Die Adresse, mit der verbunden wird.</param>
+            <param name="port">Der Port, mit welchem eine Verbindung hergestellt wird.</param>
+        </member>
+        <member name="M:SimpleNetwork.TCPClient.Disconnect">
+            <summary>
+            Trennt die Verbindung zum Server.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPClient.Exit">
+            <summary>
+            Trennt die Verbindung zum Server, falls eine besteht, und sendet eine ExitRequest Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPClient.Send(System.Byte[])">
+            <summary>
+            Sendet Daten an den Server.
+            </summary>
+            <param name="data">Daten, die gesendet werden.</param>
+            <exception cref="T:System.ArgumentException">Wird ausgelöst, wenn der Parameter data leer ist.</exception>
+            <returns>Liefert true falls die Daten erfolgreich versendet wurden.</returns>
+        </member>
+        <member name="M:SimpleNetwork.TCPClient.Send(System.String)">
+            <summary>
+            Sendet eine Zeichenkette an den Server.
+            </summary>
+            <param name="value">Zeichenkette, die gesendet wird.</param>
+            <exception cref="T:System.ArgumentException">Wird ausgelöst, wenn der Parameter value leer ist.</exception>
+            <returns>Liefert true falls die Zeichenkette erfolgreich versendet wurde.</returns>
+        </member>
+        <member name="M:SimpleNetwork.TCPClient.Send(System.UInt16,System.String[])">
+            <summary>
+            Sendet eine formatierte Zeichenkette an den Server.
+            </summary>
+            <param name="id">ID (0 - 999)</param>
+            <param name="parameter">Beliebige Zeichenkettenparameter</param>
+            <exception cref="T:System.ArgumentException">Wird ausgelöst, wenn ID einen ungültigen Wert enthält.</exception>
+            <returns>Liefert true falls die formatierte Zeichenkette erfolgreich versendet wurde.</returns>
+        </member>
+        <member name="T:SimpleNetwork.TCPServer">
+            <summary>
+            Stellt einen TCP-Server zur Verfügung.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.TCPServer.ConnectedClientsCount">
+            <summary>
+            Liefert die Anzahl, der verbundenen Clients.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.TCPServer.ConnectedClients">
+            <summary>
+            Liefert ein Array mit den verbundenen Clients.
+            </summary>
+        </member>
+        <member name="P:SimpleNetwork.TCPServer.CanSend">
+            <summary>
+            Liefert einen Wert, der angibt, ob Nachrichten gesendet werden können.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.#ctor">
+            <summary>
+            Stellt einen TCP-Server bereit.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.Start(System.Int32)">
+            <summary>
+            Startet den Server und wartet auf eingehende Verbindungen.
+            </summary>
+            <param name="port">Der Port, der für den Server reserviert wird.</param>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.Start(System.Net.IPAddress,System.Int32)">
+            <summary>
+            Startet den Server und wartet auf eingehende Verbindungen.
+            </summary>
+            <param name="address">Die Adresse, die dem Server zugeordnet wird.</param>
+            <param name="port">Der Port, der für den Server reserviert wird.</param>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.Stop">
+            <summary>
+            Beendet den Server und schließt alle Verbindungen.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.Exit">
+            <summary>
+            Beendet den Server, falls dieser läuft, und sendet eine ExitRequest Nachricht.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.DisconnectClient(System.Int64)">
+            <summary>
+            Schließt die Verbindung mit dem angegebenen Client.
+            </summary>
+            <param name="client">Client, mit dem die Verbindung beendet werden soll.</param>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.ServerThread">
+            <summary>
+            Wartet auf eingehende Verbindungen, und erstellt für jeden Client einen Thread.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.ClientThread(System.Object)">
+            <summary>
+            Empfängt Daten vom Client.
+            </summary>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.Send(System.Int64,System.Byte[])">
+            <summary>
+            Sendet Daten an einen oder alle Clients.
+            </summary>
+            <param name="client">Client, an dem gesendet wird, oder 0 um an alle zu senden.</param>
+            <param name="data">Daten die gesendet werden.</param>
+            <exception cref="T:System.ArgumentException">Wird ausgelöst, wenn der Parameter data leer ist.</exception>
+            <returns>Liefert die Anzahl der Client an denen die Nachricht erfolgreich versendet wurde.</returns>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.Send(System.Int64,System.String)">
+            <summary>
+            Sendet eine Zeichenkette an einen oder alle Clients.
+            </summary>
+            <param name="client">Client, an dem gesendet wird, oder 0 um an alle zu senden.</param>
+            <param name="value">Zeichenkette die gesendet wird.</param>
+            <exception cref="T:System.ArgumentException">Wird ausgelöst, wenn der Parameter value leer ist.</exception>
+            <returns>Liefert die Anzahl der Client an denen die Nachricht erfolgreich versendet wurde.</returns>
+        </member>
+        <member name="M:SimpleNetwork.TCPServer.Send(System.Int64,System.UInt16,System.String[])">
+            <summary>
+            Sendet eine formatierte Zeichenkette an einen oder alle Clients.
+            </summary>
+            <param name="client">Client, an dem gesendet wird, oder 0 um an alle zu senden.</param>
+            <param name="id">ID (0 - 999)</param>
+            <param name="parameter">Beliebige Zeichenkettenparameter</param>
+            <exception cref="T:System.ArgumentException">Wird ausgelöst, wenn der Parameter ID in einen ungültigen Bereich liegt.</exception>
+            <returns>Liefert die Anzahl der Client an denen die Nachricht erfolgreich versendet wurde.</returns>
+        </member>
+    </members>
+</doc>

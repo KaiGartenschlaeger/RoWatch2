@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rowatch2", "Rowatch2\Rowatch2.csproj", "{AB92DE55-9A18-4F71-9B17-16D3A7E712D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerRessources", "ServerRessources\ServerRessources.csproj", "{E5F22BDE-CC06-4DBD-8206-E19CFDF5AD50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoWatch2Server", "Rowatch2Server\RoWatch2Server.csproj", "{C2302AC5-A25D-496F-9E8E-D181BE877D47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PartyServer", "PartyServer", "{4823BA6A-598D-4175-9D06-C49B2604A580}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoWatch", "RoWatch", "{694BBF72-0332-45F8-83A8-342D04D874D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared Projects", "Shared Projects", "{448BF44D-0C3C-494A-9DDA-5AD745DEF1B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{F08AF826-31B1-47D5-A6AB-99E447FE07B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rowatch2.Plugin", "Rowatch2.Plugin\Rowatch2.Plugin.csproj", "{DD99EB6A-739A-4699-A761-23282E83AC58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginSample", "PluginSample\PluginSample.csproj", "{8E12A5A6-7FE6-453D-90F2-4EA48A345056}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB92DE55-9A18-4F71-9B17-16D3A7E712D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB92DE55-9A18-4F71-9B17-16D3A7E712D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB92DE55-9A18-4F71-9B17-16D3A7E712D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB92DE55-9A18-4F71-9B17-16D3A7E712D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F22BDE-CC06-4DBD-8206-E19CFDF5AD50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F22BDE-CC06-4DBD-8206-E19CFDF5AD50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F22BDE-CC06-4DBD-8206-E19CFDF5AD50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F22BDE-CC06-4DBD-8206-E19CFDF5AD50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2302AC5-A25D-496F-9E8E-D181BE877D47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2302AC5-A25D-496F-9E8E-D181BE877D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2302AC5-A25D-496F-9E8E-D181BE877D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2302AC5-A25D-496F-9E8E-D181BE877D47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD99EB6A-739A-4699-A761-23282E83AC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD99EB6A-739A-4699-A761-23282E83AC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD99EB6A-739A-4699-A761-23282E83AC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD99EB6A-739A-4699-A761-23282E83AC58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E12A5A6-7FE6-453D-90F2-4EA48A345056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E12A5A6-7FE6-453D-90F2-4EA48A345056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E12A5A6-7FE6-453D-90F2-4EA48A345056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E12A5A6-7FE6-453D-90F2-4EA48A345056}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB92DE55-9A18-4F71-9B17-16D3A7E712D3} = {694BBF72-0332-45F8-83A8-342D04D874D8}
+		{E5F22BDE-CC06-4DBD-8206-E19CFDF5AD50} = {448BF44D-0C3C-494A-9DDA-5AD745DEF1B5}
+		{C2302AC5-A25D-496F-9E8E-D181BE877D47} = {4823BA6A-598D-4175-9D06-C49B2604A580}
+		{DD99EB6A-739A-4699-A761-23282E83AC58} = {F08AF826-31B1-47D5-A6AB-99E447FE07B3}
+		{8E12A5A6-7FE6-453D-90F2-4EA48A345056} = {F08AF826-31B1-47D5-A6AB-99E447FE07B3}
+	EndGlobalSection
+EndGlobal

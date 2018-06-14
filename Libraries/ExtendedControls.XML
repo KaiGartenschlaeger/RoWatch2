@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExtendedControls</name>
+    </assembly>
+    <members>
+        <member name="F:ExtendedControls.Charts.BarChart.components">
+            <summary> 
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.Charts.BarChart.Dispose(System.Boolean)">
+            <summary> 
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:ExtendedControls.Charts.BarChart.InitializeComponent">
+            <summary> 
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="F:ExtendedControls.Charts.LineChart.components">
+            <summary> 
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.Charts.LineChart.Dispose(System.Boolean)">
+            <summary> 
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:ExtendedControls.Charts.LineChart.InitializeComponent">
+            <summary> 
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="T:ExtendedControls.FormEx">
+            <summary>
+            Erweitertes Formular
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.FormEx.SetFixedSizeableBorder">
+            <summary>
+            Ändert den Randmodus zu nicht veränderbar.
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.FormEx.SetForeground">
+            <summary>
+            Bringt das Fenster in dem Vordergrund.
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.FormEx.SetProgressValue(System.UInt64,System.UInt64,ExtendedControls.TBPFLAG)">
+            <summary>
+            Legt den Fortschritt in der Taskbar fest. (Ab Windows Vista)
+            </summary>
+            <param name="value">Aktueller Wert</param>
+            <param name="max">Maximaler Wert</param>
+        </member>
+        <member name="M:ExtendedControls.FormEx.SetThumbnailTooltip(System.String)">
+            <summary>
+            Legt den Thumbnail Tooltip der Taskbar fest. (Ab Windows Vista)
+            </summary>
+            <param name="tooltip">Text der im Tooltip angezeigt wird.</param>
+        </member>
+        <member name="M:ExtendedControls.FormEx.SetThumbBarButtons(ExtendedControls.THUMBBUTTON[])">
+            <summary>
+            Legt die Thumbbar-Buttons fest.
+            </summary>
+            <param name="buttons">Bie Buttons, die dem ThumBar zugeordnet werden.</param>
+        </member>
+        <member name="P:ExtendedControls.FormEx.MagneticType">
+            <summary>
+            Legt fest, an Welchen Bereichen Formulare angezogen werden.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.FormEx.MagneticValue">
+            <summary>
+            Ruft den Magnetanziehungsbereich in Pixel ab, oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.FormEx.OpacityInactive">
+            <summary>
+            Ruft die Fenstertransparents bei Fokusverlust ab, oder legt diese fest.
+            </summary>
+        </member>
+        <member name="T:ExtendedControls.MyForm_MagneticType">
+            <summary>
+            Magnetische Bereiche.
+            </summary>
+        </member>
+        <member name="T:ExtendedControls.ThumbButtonClickedEventArgs">
+            <summary>
+            Liefert Informationen über den Thumbnail-Button der geklickt wurde.
+            </summary>
+        </member>
+        <member name="E:ExtendedControls.ListViewEx.ClientWidthChanged">
+            <summary>
+            Tritt auf, wenn sich die Innenbreite des Controls ändert.
+            </summary>
+        </member>
+        <member name="E:ExtendedControls.ListViewEx.ItemInsert">
+            <summary>
+            Tritt auf, wenn ein neues Item eingefügt wird.
+            </summary>
+        </member>
+        <member name="E:ExtendedControls.ListViewEx.ItemDelete">
+            <summary>
+            Tritt auf, wenn ein Item entfernt wird.
+            </summary>
+        </member>
+        <member name="E:ExtendedControls.ListViewEx.ColumnRightClick">
+            <summary>
+            Tritt auf, wenn mit der rechten Maustaste auf eine Spalte gedrückt wird.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.ListViewExColumnEventArgs.Index">
+            <summary>
+            Liefert den Index der angeklickten Spalte.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.ListViewExColumnEventArgs.MousePosition">
+            <summary>
+            Liefert die Mausposition auf dem Header.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.ListViewExItemEventArgs.ItemIndex">
+            <summary>
+            Index des Items.
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.PathControl.ChangePath">
+            <summary>
+            Öffnet das Verzeichnis Auswahl-Fenster.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.PathControl.ChooseButtonEnabled">
+            <summary>
+            Legt fest, ob das Verzeichnis verändert werden kann.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.PathControl.SelectedPath">
+            <summary>
+            Liefert das aktuelle Verzeichnis, oder legt dieses fest.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.PathControl.InitialPath">
+            <summary>
+            Ermittelt den Startordner für der Auswahl, oder liefert diesen.
+            Standard ist der aktuelle Ordner.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.PathControl.TextBoxFolderchange">
+            <summary>
+            Legt fest, ob der Ordner Auswahldialog beim klicken auf der Textbox aufgerufen wird.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.PathControl.DirectoryOnly">
+            <summary>
+            Legt fest, ob nur das Verzeichnis ausgewählt werden kann.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.PathControl.FileFilter">
+            <summary>
+            Liefert den Dateifilter, der im Datei-Dialog benutzt wird, oder legt diesen fest.
+            </summary>
+        </member>
+        <member name="P:ExtendedControls.PathControl.DefaultDirectory">
+            <summary>
+            Liefert das Standardverzeichnis, oder legt dieses fest.
+            </summary>
+        </member>
+        <member name="F:ExtendedControls.PathControl.components">
+            <summary> 
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.PathControl.Dispose(System.Boolean)">
+            <summary> 
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:ExtendedControls.PathControl.InitializeComponent">
+            <summary> 
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="F:ExtendedControls.ProgressbarEx.components">
+            <summary> 
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:ExtendedControls.ProgressbarEx.Dispose(System.Boolean)">
+            <summary> 
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:ExtendedControls.ProgressbarEx.InitializeComponent">
+            <summary> 
+            Erforderliche Methode für die Designerunterstützung. 
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tools</name>
+    </assembly>
+    <members>
+        <member name="T:Tools.Async.AsyncProcess">
+            <summary>
+            Stellt einen asynchronen Vorgang dar.
+            </summary>
+        </member>
+        <member name="M:Tools.Async.AsyncProcess.Start">
+            <summary>
+            Started den asynchronen Vorgang.
+            </summary>
+        </member>
+        <member name="M:Tools.Async.AsyncProcess.Start(System.Object)">
+            <summary>
+            Started den asynchronen Vorgang.
+            </summary>
+            <param name="user">Benutzerdefinierter Wert, der an den Vorgang übergeben wird.</param>
+        </member>
+        <member name="E:Tools.Async.AsyncProcess.ProcessStarted">
+            <summary>
+            Wird aufgerufen wenn der asynchrone Vorgang ausgeführt wird.
+            </summary>
+        </member>
+        <member name="E:Tools.Async.AsyncProcess.ProcessFinished">
+            <summary>
+            Wird aufgerufen wenn der asynchrone Vorgang beendet wurde.
+            </summary>
+        </member>
+        <member name="T:Tools.Collections.BinaryHeap`1">
+            <summary>
+            Stellt einen binärbaum dar.
+            </summary>
+        </member>
+        <member name="P:Tools.Collections.BinaryHeap`1.Count">
+            <summary>
+            Liefert die Anzahl an Elemente in der Liste.
+            </summary>
+        </member>
+        <member name="M:Tools.Collections.BinaryHeap`1.Clear">
+            <summary>
+            Entfernt alle Elemente aus der Liste.
+            </summary>
+        </member>
+        <member name="M:Tools.Collections.BinaryHeap`1.TrimExcess">
+            <summary>
+            Setzt die Kapazität der Liste auf die tatsächliche Anzahl an Elemente in der Liste.
+            </summary>
+        </member>
+        <member name="M:Tools.Collections.BinaryHeap`1.Insert(`0)">
+            <summary>
+            Fügt ein Element hinzu.
+            </summary>
+        </member>
+        <member name="M:Tools.Collections.BinaryHeap`1.Peek">
+            <summary>
+            Liefert das oberste Element aus der Liste ohne es zu entfernen.
+            </summary>
+        </member>
+        <member name="M:Tools.Collections.BinaryHeap`1.RemoveRoot">
+            <summary>
+            Entfernt das oberste Element auf der Liste.
+            </summary>
+        </member>
+        <member name="T:Tools.CompressHelper">
+            <summary>
+            Stellt Hilfsmethoden zum komprimieren- /dekomprimieren zur Verfügung.
+            </summary>
+        </member>
+        <member name="M:Tools.CompressHelper.GZIPCompress(System.Byte[])">
+            <summary>
+            Komprimiert ein Array mit den GZIP-Algorithmus.
+            </summary>
+            <param name="data">Array das komprimiert werden soll.</param>
+        </member>
+        <member name="M:Tools.CompressHelper.GZIPDecompress(System.Byte[])">
+            <summary>
+            Dekomprimiert ein zuvor mit den GZIP-Algorithmus komprimiertes Array.
+            </summary>
+            <param name="compressedData">Array das die zuvor komprimierten Daten enthält.</param>
+        </member>
+        <member name="T:Tools.HashHelper">
+            <summary>
+            Stellt Methoden zum erstellen von Hashwerten zur Verfügung.
+            </summary>
+        </member>
+        <member name="M:Tools.HashHelper.ToMD5(System.String)">
+            <summary>
+            Erstellt einen MD5-Hash.
+            </summary>
+        </member>
+        <member name="M:Tools.HashHelper.ToMD5(System.Byte[])">
+            <summary>
+            Erstellt einen MD5-Hash.
+            </summary>
+        </member>
+        <member name="M:Tools.HashHelper.ToSHA1(System.String)">
+            <summary>
+            Erstellt einen SHA1-Hash.
+            </summary>
+        </member>
+        <member name="M:Tools.HashHelper.ToSHA1(System.Byte[])">
+            <summary>
+            Erstellt einen SHA1-Hash.
+            </summary>
+        </member>
+        <member name="M:Tools.HashHelper.ToCrc32(System.Byte[])">
+            <summary>
+            Erstellt einen CRC32-Hash.
+            </summary>
+        </member>
+        <member name="M:Tools.HashHelper.ToCRC32(System.String)">
+            <summary>
+            Erstellt einen CRC32-Hash.
+            </summary>
+        </member>
+        <member name="T:Tools.Hashing.Crc32">
+            <summary>
+            Implements a 32-bit CRC hash algorithm compatible with Zip etc.
+            </summary>
+            <remarks>
+            Crc32 should only be used for backward compatibility with older file formats
+            and algorithms. It is not secure enough for new applications.
+            If you need to call multiple times for the same data either use the HashAlgorithm
+            interface or remember that the result of one Compute call needs to be ~ (XOR) before
+            being passed in as the seed for the next Compute call.
+            </remarks>
+        </member>
+        <member name="T:Tools.MathHelper">
+            <summary>
+            Stellt mathematische Hilfsmethoden zur Verfügung.
+            </summary>
+        </member>
+        <member name="M:Tools.MathHelper.Clamp(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Überprüft ob der Wert zwischen min und max liegt und passt diesen ggf. an.
+            </summary>
+            <param name="value">Wert der überprüft werden soll.</param>
+            <param name="min">Kleinst möglicher Wert.</param>
+            <param name="max">Größt möglichster Wert.</param>
+        </member>
+        <member name="T:Tools.StringHelper">
+            <summary>
+            Stellt Hilfsmethoden für Zeichenketten-Operationen bereit.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.EncodeBase64(System.Byte[],System.String)">
+            <summary>
+            Kodiert eine Zeichenfolge zu Base64.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.EncodeBase64(System.String,System.String)">
+            <summary>
+            Kodiert eine Byte-Array zu eine Base64 Zeichenfolge.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.DecodeBase64(System.Byte[],System.String)">
+            <summary>
+            Dekodiert eine Base64 kodierte Zeichenfolge.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.DecodeBase64(System.String,System.String)">
+            <summary>
+            Dekodiert ein Base64 kodiertes Byte-Array.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.SplitString(System.String,System.Char,System.Boolean)">
+            <summary>
+            Zerlegt eine Zeichenkette anhand eines Trennzeichens.
+            </summary>
+            <param name="value">Zeichenkette die zerlegt werden soll.</param>
+            <param name="separator">Trennzeichen anhand dessen die Zeichenkette zerlegt wird.</param>
+            <param name="trim">Falls gesetzt, werden alle Leerzeichen am Anfang und am Ende von jeden Wert entfernt.</param>
+        </member>
+        <member name="M:Tools.StringHelper.Parse``1(System.String,``0)">
+            <summary>
+            Versucht einen Wert zu parsen.
+            </summary>
+            <typeparam name="T">Typ des Wertes der geparsed werden soll.</typeparam>
+            <param name="value">Wert der geparsed werden soll.</param>
+            <param name="fallbackValue">Ein alternativer Wert, der zurückgegeben wird, falls das parsen fehlschlägt.</param>
+        </member>
+        <member name="M:Tools.StringHelper.ParseBool(System.Object,System.Boolean)">
+            <summary>
+            Konvertiert eine Zeichenkette zu einen Boolean.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.ParseByte(System.Object,System.Byte)">
+            <summary>
+            Konvertiert eine Zeichenkette zu ein Byte.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.ParseShort(System.Object,System.Int16)">
+            <summary>
+            Konvertiert eine Zeichenkette zu einen Short.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.ParseInt(System.Object,System.Int32)">
+            <summary>
+            Konvertiert eine Zeichenkette zu einen Integer.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.ParseLong(System.Object,System.Int64)">
+            <summary>
+            Konvertiert eine Zeichenkette zu einen Long.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.ParseFloat(System.Object,System.Single)">
+            <summary>
+            Konvertiert eine Zeichenkette zu einen Float.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.ParseDouble(System.Object,System.Double)">
+            <summary>
+            Konvertiert eine Zeichenkette zu einen Double.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.ParseDecimal(System.Object,System.Decimal)">
+            <summary>
+            Konvertiert eine Zeichenkette zu einen Decimal.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsBool(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Boolean konvertiert werden kann.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsByte(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Byte konvertiert werden kann.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsShort(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Short konvertiert werden kann.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsInt(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Integer konvertiert werden kann.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsLong(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Long konvertiert werden kann.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsFloat(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Float konvertiert werden kann.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsDouble(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Double konvertiert werden kann.
+            </summary>
+        </member>
+        <member name="M:Tools.StringHelper.IsDecimal(System.String)">
+            <summary>
+            Überprüft ob der Wert zu einen Decimal konvertiert werden kann.
+            </summary>
+        </member>
+    </members>
+</doc>

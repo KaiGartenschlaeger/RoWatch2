@@ -1,0 +1,205 @@
+﻿This file contains some consts to refresh the cliend addresses.
+
+----------
+EXP Tables
+----------
+http://irowiki.org/wiki/Base_EXP_Chart
+http://irowiki.org/wiki/Job_EXP_Chart
+
+http://ratemyserver.net/index.php?page=misc_table_exp&op=19
+http://ratemyserver.net/index.php?page=misc_table_exp&op=20
+
+http://rode-r.doddlercon.com/viewpage/d/1
+
+-----------
+Ram editor:
+-----------
+http://www.cheatengine.org/
+
+-------------
+Job Class IDs
+-------------
+Job_Novice	0
+Job_Swordman	1
+Job_Mage	2
+Job_Archer	3
+Job_Acolyte	4
+Job_Merchant	5
+Job_Thief	6
+Job_Knight	7
+Job_Priest	8
+Job_Wizard	9
+Job_Blacksmith	10
+Job_Hunter	11
+Job_Assassin	12
+Job_Knight2	13
+Job_Crusader	14
+Job_Monk	15
+Job_Sage	16
+Job_Rogue	17
+Job_Alchem	18
+Job_Alchemist	18
+Job_Bard	19
+Job_Dancer	20
+Job_Crusader2	21
+Job_Wedding	22
+Job_SuperNovice	23
+Job_Gunslinger	24
+Job_Ninja	25
+Job_Xmas	26
+
+Job_Novice_High	4001
+Job_Swordman_High	4002
+Job_Mage_High	4003
+Job_Archer_High	4004
+Job_Acolyte_High	4005
+Job_Merchant_High	4006
+Job_Thief_High	4007
+Job_Lord_Knight	4008
+Job_High_Priest	4009
+Job_High_Wizard	4010
+Job_Whitesmith	4011
+Job_Sniper	4012
+Job_Assassin_Cross	4013
+Job_Lord_Knight2	4014
+Job_Paladin	4015
+Job_Champion	4016
+Job_Professor	4017
+Job_Stalker	4018
+Job_Creator	4019
+Job_Clown	4020
+Job_Gypsy	4021
+Job_Paladin2	4022
+
+4054 RK Rune Knight	(Base 2nd to 3rd)
+4055 WL Warlock		(Base 2nd to 3rd)
+4056 RA Ranger		(Base 2nd to 3rd)
+4057 AB Arch Bishop	(Base 2nd to 3rd)
+4058 NC Mechanic	(Base 2nd to 3rd)
+4059 GC Guillotine Cross(Base 2nd to 3rd)
+4060 RK Rune Knight	(Trans 2nd to 3rd)
+4061 WL Warlock		(Trans 2nd to 3rd)
+4062 RA Ranger		(Trans 2nd to 3rd)
+4063 AB Arch Bishop	(Trans 2nd to 3rd)
+4064 NC Mechanic	(Trans 2nd to 3rd)
+4065 GC Guillotine Cross(Trans 2nd to 3rd)
+4066 LG Royal Guard	(Base 2nd to 3rd)
+4067 SO Sorcerer	(Base 2nd to 3rd)
+4068 MI Minstrel	(Base 2nd to 3rd)
+4069 WA Wanderer	(Base 2nd to 3rd)
+4070 SR Sura		(Base 2nd to 3rd)
+4071 GN Genetic		(Base 2nd to 3rd)
+4072 SC Shadow Chaser	(Base 2nd to 3rd)
+4073 LG Royal Guard	(Trans 2nd to 3rd)
+4074 SO Sorcerer	(Trans 2nd to 3rd)
+4075 MI Minstrel	(Trans 2nd to 3rd)
+4076 WA Wanderer	(Trans 2nd to 3rd)
+4077 SR Sura		(Trans 2nd to 3rd)
+4078 GN Genetic		(Trans 2nd to 3rd)
+4079 SC Shadow Chaser	(Trans 2nd to 3rd)
+4080 RK Rune Knight Mount	(Base 2nd to 3rd)	(Green Dragon)
+4081 RK Rune Knight Mount	(Trans 2nd to 3rd)	(Green Dragon)
+4082 LG Royal Guard Mount	(Base 2nd to 3rd)
+4083 LG Royal Guard Mount	(Trans 2nd to 3rd)
+4084 RA Ranger Mount		(Base 2nd to 3rd)
+4085 RA Ranger Mount		(Trans 2nd to 3rd)
+4086 NC Mechanic Mount		(Base 2nd to 3rd)
+4087 NC Mechanic Mount		(Trans 2nd to 3rd)
+4088 RK Rune Knight Mount	(Base 2nd to 3rd)	(Black Dragon)
+4089 RK Rune Knight Mount	(Trans 2nd to 3rd)	(Black Dragon)
+4090 RK Rune Knight Mount	(Base 2nd to 3rd)	(White Dragon)
+4091 RK Rune Knight Mount	(Trans 2nd to 3rd)	(White Dragon)
+4092 RK Rune Knight Mount	(Base 2nd to 3rd)	(Blue Dragon)
+4093 RK Rune Knight Mount	(Trans 2nd to 3rd)	(Blue Dragon)
+4094 RK Rune Knight Mount	(Base 2nd to 3rd)	(Red Dragon)
+4095 RK Rune Knight Mount	(Trans 2nd to 3rd)	(Red Dragon)
+
+---------------------------
+Homunculus friendly values:
+---------------------------
+1-3          Hate with Passion    (?)
+4-10         Hate                 (?)
+11-100       Awkward              (?)
+101-250      Shy                  (?)
+251-750      Neutral              (?)
+751-910      Cordial              (?)
+911-1000     Loyal                (Treu)
+
+------------------
+Pet hungry values:
+------------------
+Stuffed (100 ~ 91)                (?)
+Satisfied (90 ~ 75)               (?)
+Neutral (74 ~ 25)                 (Neutral)
+Hungry (24 ~ 15) *hmm*            (Hungrig)
+Very Hungry (14 ~ 0) *hmm*        (?)
+
+--------------------
+Pet friendly values:
+--------------------
+Awkward- Less than 100 - Ready to abandon its owner                    (?)
+Shy- 100–249 - Uses unhappy emotes such as /pif and /wah               (?)
+Neutral - 250–749 - Uses friendly emotes such as /no1 and /ok          (Neutral)
+Cordial - 750–909 - Uses affectionate emotes such as /lv and /kis      (?)
+Loyal - 910–1000 - Talks often and uses affectionate emotes            (?)
+
+---------------------------------------------------------------
+Pet values:
+
+Name Hunger Delay IntimacyGainedPerFeed IntimacyLossPerOverFeed
+---------------------------------------------------------------
+PORING 80 60 50 100
+DROPS 80 60 40 100
+POPORING 80 60 30 100
+LUNATIC 80 60 40 100
+PICKY 80 60 40 100
+CHONCHON 80 60 30 100
+STEEL_CHONCHON 80 60 20 100
+HUNTER_FLY 80 60 10 100
+SAVAGE_BABE 80 60 40 100
+DESERT_WOLF_B 80 60 40 100
+ROCKER 80 60 30 100
+SPORE 80 60 30 100
+POISON_SPORE 80 60 20 100
+PECOPECO 80 60 30 100
+SMOKIE 80 60 30 100
+YOYO 80 60 20 100
+ORK_WARRIOR 80 60 20 100
+MUNAK 80 60 20 100
+DOKEBI 80 60 20 100
+SOHEE 80 60 10 100
+ISIS 80 60 10 100
+PETIT 80 60 20 100
+DEVIRUCHI 80 60 10 100
+BAPHOMET_ 80 60 10 100
+BON_GUN 80 60 30 100
+ZHERLTHSH 80 60 10 100
+ALICE 80 60 20 100
+EVENT_RICECAKE 80 60 50 100
+GOBLINE_XMAS 80 60 50 100
+CHUNG_E 80 60 50 100
+ECLIPSE_P 80 60 50 100
+GOBLIN_1 80 60 50 100
+GOBLIN_2 80 60 50 100
+GOBLIN_4 80 60 50 100
+DELETER_ 80 60 20 100
+DIABOLIC 80 60 10 100
+WANDER_MAN 80 60 20 100
+GOLEM 80 60 20 100
+MARIONETTE 80 60 10 100
+MEDUSA 80 60 10 100
+WHISPER 80 60 20 100
+GOBLIN_LEADER 80 60 10 100
+SUCCUBUS 80 60 10 100
+INCUBUS 80 60 10 100
+NIGHTMARE_TERROR 80 60 10 100
+SHINOBI 80 60 20 100
+MIYABI_NINGYO 80 60 15 100
+WICKED_NYMPH 80 60 15 100
+STONE_SHOOTER 80 60 20 100
+DULLAHAN 80 60 10 100
+LOLI_RURI 80 60 15 100
+CIVIL_SERVANT 80 60 10 100
+LEAF_CAT 80 60 20 100
+BACSOJIN_ 80 60 10 100
+IMP 80 60 10 100

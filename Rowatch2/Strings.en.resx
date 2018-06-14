@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BaseExpGained" xml:space="preserve">
+    <value>{0:n0} ({1:p2}) Base EXP gained ({2:n0} kills to next level)</value>
+  </data>
+  <data name="BaseExpLost" xml:space="preserve">
+    <value>{0:n0} Base EXP lost</value>
+  </data>
+  <data name="BaseLevelUP" xml:space="preserve">
+    <value>Base Level up from {0:n0} to {1:n0}</value>
+  </data>
+  <data name="CharSelection" xml:space="preserve">
+    <value>Character selection</value>
+  </data>
+  <data name="ChooseGameDirectory" xml:space="preserve">
+    <value>Please choose your Game-Directory in settings first.</value>
+  </data>
+  <data name="ClientsLoaded" xml:space="preserve">
+    <value>{0} client definitions loaded</value>
+  </data>
+  <data name="ClientsLoadingFailed" xml:space="preserve">
+    <value>Failed to load clients db</value>
+  </data>
+  <data name="ClientStartFailed" xml:space="preserve">
+    <value>Failed to start the Client.</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Connect to party server</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="GameFileNotFound" xml:space="preserve">
+    <value>Can't find the Game exe file.\nPlease choose it in the settings.</value>
+  </data>
+  <data name="HideLog" xml:space="preserve">
+    <value>Hide log</value>
+  </data>
+  <data name="HomExpGained" xml:space="preserve">
+    <value>{0:n0} ({1:p2}) Homunculus EXP gained ({2:n0} kills to next level)</value>
+  </data>
+  <data name="HPGained" xml:space="preserve">
+    <value>{0:n0} HP gained</value>
+  </data>
+  <data name="HPLost" xml:space="preserve">
+    <value>{0:n0} HP lost</value>
+  </data>
+  <data name="InvalidGameDirectory" xml:space="preserve">
+    <value>Game-Directory doesn't exist anymore.\nPlease choose it in settings.</value>
+  </data>
+  <data name="JobClsLoaded" xml:space="preserve">
+    <value>{0:n0} Job Classes loaded</value>
+  </data>
+  <data name="JobClsLoadingFailed" xml:space="preserve">
+    <value>Loading Job Classes Db failed</value>
+  </data>
+  <data name="JobExpGained" xml:space="preserve">
+    <value>{0:n0} ({1:p2}) Job EXP gained ({2:n0} kills to next level)</value>
+  </data>
+  <data name="JobExpLost" xml:space="preserve">
+    <value>{0:n0} Job EXP lost</value>
+  </data>
+  <data name="JobLevelUP" xml:space="preserve">
+    <value>Job Level up from {0:n0} to {1:n0}</value>
+  </data>
+  <data name="MapChanged" xml:space="preserve">
+    <value>Map changed to {0}</value>
+  </data>
+  <data name="MapDBLoaded" xml:space="preserve">
+    <value>{0:n0} Maps loaded</value>
+  </data>
+  <data name="MapDBLoadFailed" xml:space="preserve">
+    <value>Loading Map Db failed</value>
+  </data>
+  <data name="MobDBLoaded" xml:space="preserve">
+    <value>{0:n0} Mobs loaded</value>
+  </data>
+  <data name="MobDBLoadFailed" xml:space="preserve">
+    <value>Loading Mob Db failed</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Values resetet</value>
+  </data>
+  <data name="SetupFileNotFound" xml:space="preserve">
+    <value>Can't find the Setup exe file.\nPlease choose it in the settings.</value>
+  </data>
+  <data name="SetupStartFailed" xml:space="preserve">
+    <value>Failed to start the setup.</value>
+  </data>
+  <data name="ShowLog" xml:space="preserve">
+    <value>Show log</value>
+  </data>
+  <data name="SPGained" xml:space="preserve">
+    <value>{0:n0} SP gained</value>
+  </data>
+  <data name="SPLost" xml:space="preserve">
+    <value>{0:n0} SP lost</value>
+  </data>
+  <data name="Started" xml:space="preserve">
+    <value>RoWatch successfully started</value>
+  </data>
+  <data name="StopTitle" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="UseAutoKey" xml:space="preserve">
+    <value>Auto key used</value>
+  </data>
+  <data name="UseAutoWing" xml:space="preserve">
+    <value>Auto fly wing used</value>
+  </data>
+  <data name="ZenyEarned" xml:space="preserve">
+    <value>{0:n0} Zeny earned</value>
+  </data>
+  <data name="ZenyLost" xml:space="preserve">
+    <value>{0:n0} Zeny lost</value>
+  </data>
+  <data name="ClientClosed" xml:space="preserve">
+    <value>The Ragnarok client was closed.</value>
+  </data>
+  <data name="ClientNotFound" xml:space="preserve">
+    <value>Can't find the Client.\nPlease be sure, that you run first Ragnarok.</value>
+  </data>
+  <data name="ConnectFailed" xml:space="preserve">
+    <value>Failed to connect to party server</value>
+  </data>
+  <data name="ConnectionLost" xml:space="preserve">
+    <value>Connection to party server lost</value>
+  </data>
+  <data name="ConnectSuccessfull" xml:space="preserve">
+    <value>Successfull connected to party server</value>
+  </data>
+  <data name="CreateScreenshot" xml:space="preserve">
+    <value>Create Screenshot..</value>
+  </data>
+  <data name="FailedTitle" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="InvalidWindowsName" xml:space="preserve">
+    <value>Windowname can't be null,\nplease setup the name in settings.</value>
+  </data>
+  <data name="KilledMobs" xml:space="preserve">
+    <value>{0} ({1:n0} per hour)</value>
+  </data>
+  <data name="NotSupportedClient" xml:space="preserve">
+    <value>Your Ragnarok Client is not supported.\nPlease update the clients definitions-file.\n\nClient-hash: '{hash}'\nExisting hashes: {hashes}</value>
+  </data>
+  <data name="OpenProcessFailed" xml:space="preserve">
+    <value>Can't open the process.\nPlease be sure to run this application as admin.</value>
+  </data>
+  <data name="ReadMemoryError" xml:space="preserve">
+    <value>Reading memory failed</value>
+  </data>
+  <data name="StartWatching" xml:space="preserve">
+    <value>Start watching</value>
+  </data>
+  <data name="StopWatching" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="StartingAddressesUpdate" xml:space="preserve">
+    <value>Aktualisiere Clientadressen..</value>
+  </data>
+  <data name="AddressesUpdateFailed" xml:space="preserve">
+    <value>Failed to update addresses.</value>
+  </data>
+  <data name="NoAddressUpdate" xml:space="preserve">
+    <value>There is no update available.</value>
+  </data>
+  <data name="AddressesUpdated" xml:space="preserve">
+    <value>Successfull updated client definition file.</value>
+  </data>
+  <data name="InfoTitle" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="ErrorLoadingSkillTimer" xml:space="preserve">
+    <value>Error by loading Skill timers.</value>
+  </data>
+  <data name="TimerNewName" xml:space="preserve">
+    <value>(Neuer Timer)</value>
+  </data>
+  <data name="EXPTablesLoadFailed" xml:space="preserve">
+    <value>Failed to load EXP-Tables</value>
+  </data>
+  <data name="EXPTablesLoadOK" xml:space="preserve">
+    <value>EXP-Tables loaded for {classes} classes.</value>
+  </data>
+  <data name="VersionCheckFailed" xml:space="preserve">
+    <value>Version check failed</value>
+  </data>
+  <data name="VersionCheckNoUpdate" xml:space="preserve">
+    <value>No update found</value>
+  </data>
+  <data name="VersionCheckRunning" xml:space="preserve">
+    <value>Running Version check..</value>
+  </data>
+  <data name="VersionCheckUpdateFound" xml:space="preserve">
+    <value>New update available!</value>
+  </data>
+  <data name="AdressFileIsReadonly" xml:space="preserve">
+    <value>The file {path} is readonly. Do you agre to remove the readonly flag temporarily to refresh the file?</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="BaseExpGainedMaxLevel" xml:space="preserve">
+    <value>{0:n0} Base EXP gained</value>
+  </data>
+  <data name="JobExpGainedMaxLevel" xml:space="preserve">
+    <value>{0:n0} Job EXP gained</value>
+  </data>
+</root>

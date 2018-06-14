@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<timers>
+  <timer>
+    <name>Improve Concentration</name>
+    <intervall>240</intervall>
+    <color>a2ff9b</color>
+    <key>F2</key>
+  </timer>
+  <timer>
+    <name>Wind Walk</name>
+    <intervall>400</intervall>
+    <color>fffa67</color>
+    <key>F6</key>
+  </timer>
+  <timer>
+    <name>Steel Body</name>
+    <intervall>150</intervall>
+    <color>848484</color>
+    <key>F2</key>
+  </timer>
+</timers>

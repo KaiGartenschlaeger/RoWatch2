@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JobClasses>
+  <JobClass>
+    <Name>Novice</Name>
+    <MaxBLvl>99</MaxBLvl>
+    <MaxJLvl>10</MaxJLvl>
+    <MaxStats>99</MaxStats>
+    <StPoints>48</StPoints>
+  </JobClass>
+  <JobClass>
+    <Name>Sage</Name>
+    <MaxBLvl>99</MaxBLvl>
+    <MaxJLvl>50</MaxJLvl>
+    <MaxStats>99</MaxStats>
+    <StPoints>48</StPoints>
+    <JobBoni>
+      <Str>6,15,26,34,43</Str>
+      <Agi>11,14,40,45,49,50</Agi>
+      <Vit>1,31,36</Vit>
+      <Int>1,9,17,23,24,29,38</Int>
+      <Dex>2,3,8,13,19,21,25,28,32</Dex>
+    </JobBoni>
+  </JobClass>
+  <JobClass>
+    <Name>Paladin</Name>
+    <MaxBLvl>99</MaxBLvl>
+    <MaxJLvl>70</MaxJLvl>
+    <MaxStats>99</MaxStats>
+    <StPoints>100</StPoints>
+    <JobBoni>
+      <Str>2,10,18,26,33,40,48,55,64</Str>
+      <Agi>3,8,16,24,37,52,60,70</Agi>
+      <Vit>1,9,15,21,30,42,49,53,63,69</Vit>
+      <Int>7,14,29,43,54,61,65</Int>
+      <Dex>6,12,17,23,36,45,57,68</Dex>
+      <Luk>39,59,67</Luk>
+    </JobBoni>
+  </JobClass>
+  <JobClass>
+    <Name>High Priest</Name>
+    <MaxBLvl>99</MaxBLvl>
+    <MaxJLvl>70</MaxJLvl>
+    <MaxStats>99</MaxStats>
+    <StPoints>100</StPoints>
+    <JobBoni>
+      <Str>5,12,21,31,38,45,60</Str>
+      <Agi>3,8,19,29,42,55,65,68</Agi>
+      <Vit>4,22,30,50,51,58,67</Vit>
+      <Int>1,7,11,20,23,24,34,47,57,61,66,70</Int>
+      <Dex>13,16,26,28,37,43,46,56,62</Dex>
+      <Luk>40,49</Luk>
+    </JobBoni>
+  </JobClass>
+</JobClasses>

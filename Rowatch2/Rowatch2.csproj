@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB92DE55-9A18-4F71-9B17-16D3A7E712D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rowatch2</RootNamespace>
+    <AssemblyName>Rowatch2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Kai\Desktop\test\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>26CB5EF8C1DFBDD57885889B0186651DFCBED3A0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Rowatch2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Rowatch2.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExtendedControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\ExtendedControls.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleNetwork, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\SimpleNetwork.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleSettings, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\SimpleSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Tools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Embeding\AutoFeedSetup.cs" />
+    <Compile Include="Embeding\CharacterInfo.cs" />
+    <Compile Include="Embeding\CharacterStatistic.cs" />
+    <Compile Include="Embeding\Chart.cs" />
+    <Compile Include="Embeding\ExpTable.cs" />
+    <Compile Include="Embeding\KeyMacro.cs" />
+    <Compile Include="Embeding\Macro.cs" />
+    <Compile Include="Embeding\MacroAction.cs" />
+    <Compile Include="Embeding\VersionCheckResult.cs" />
+    <Compile Include="Embeding\VKeyItem.cs" />
+    <Compile Include="Enums\ClassType.cs" />
+    <Compile Include="Embeding\PluginInfo.cs" />
+    <Compile Include="Embeding\SkillTimer.cs" />
+    <Compile Include="Enums\ChartType.cs" />
+    <Compile Include="Embeding\JobBonus.cs" />
+    <Compile Include="Embeding\JobClass.cs" />
+    <Compile Include="Embeding\Mob.cs" />
+    <Compile Include="Embeding\OnLoginEventArgs.cs" />
+    <Compile Include="Embeding\PartyMember.cs" />
+    <Compile Include="Enums\FeedAction.cs" />
+    <Compile Include="Enums\FeedRecordStep.cs" />
+    <Compile Include="Enums\JobClassIDs.cs" />
+    <Compile Include="Enums\LogType.cs" />
+    <Compile Include="Enums\MacroActionType.cs" />
+    <Compile Include="Enums\MobDbColumns.cs" />
+    <Compile Include="Enums\MobElement.cs" />
+    <Compile Include="Enums\MobMode.cs" />
+    <Compile Include="Enums\MobRace.cs" />
+    <Compile Include="Enums\MobScale.cs" />
+    <Compile Include="Enums\StatsType.cs" />
+    <Compile Include="Enums\SystemLogType.cs" />
+    <Compile Include="Forms\FormAutofeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAutofeed.Designer.cs">
+      <DependentUpon>FormAutofeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCharState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCharState.Designer.cs">
+      <DependentUpon>FormCharState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormExpCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormExpCounter.Designer.cs">
+      <DependentUpon>FormExpCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMacroAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMacroAction.Designer.cs">
+      <DependentUpon>FormMacroAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMacro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMacro.Designer.cs">
+      <DependentUpon>FormMacro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMacros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMacros.Designer.cs">
+      <DependentUpon>FormMacros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCharCalculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCharCalculator.Designer.cs">
+      <DependentUpon>FormCharCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCharts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCharts.Designer.cs">
+      <DependentUpon>FormCharts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormChooseClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormChooseClient.Designer.cs">
+      <DependentUpon>FormChooseClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHomunculus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormHomunculus.Designer.cs">
+      <DependentUpon>FormHomunculus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMinimized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMinimized.Designer.cs">
+      <DependentUpon>FormMinimized.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMobs.Designer.cs">
+      <DependentUpon>FormMobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddSkillTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddSkillTimer.Designer.cs">
+      <DependentUpon>FormAddSkillTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormParty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormParty.Designer.cs">
+      <DependentUpon>FormParty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMacroExecution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMacroExecution.Designer.cs">
+      <DependentUpon>FormMacroExecution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPet.Designer.cs">
+      <DependentUpon>FormPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSkillTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSkillTimer.Designer.cs">
+      <DependentUpon>FormSkillTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals\Addresses.cs" />
+    <Compile Include="Globals\AutoKey.cs" />
+    <Compile Include="Globals\AutoPotions.cs" />
+    <Compile Include="Globals\AutoWing.cs" />
+    <Compile Include="Globals\AutowingCondition.cs" />
+    <Compile Include="Globals\ChartValues.cs" />
+    <Compile Include="Globals\Paths.cs" />
+    <Compile Include="Globals\Settings.cs" />
+    <Compile Include="Librarys\Helper.cs" />
+    <Compile Include="Librarys\LabelRefreshTimer.cs" />
+    <Compile Include="Librarys\MobListviewSorter.cs" />
+    <Compile Include="Librarys\MouseHook.cs" />
+    <Compile Include="Librarys\OpenProcessResult.cs" />
+    <Compile Include="Librarys\ProcessManager.cs" />
+    <Compile Include="Librarys\SendInputManager.cs" />
+    <Compile Include="Librarys\Sound.cs" />
+    <Compile Include="Librarys\WinAPI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings.de.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Strings.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.en.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DB\RoWatch.xlsx" />
+    <None Include="Resources\PetHungry.wav" />
+    <None Include="Resources\homunculus_hungry.wav" />
+    <None Include="Resources\cash register.wav" />
+    <None Include="Plugins\PluginSample.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\white_potion.png" />
+    <None Include="Resources\fly_wing.png" />
+    <Content Include="DB\consts.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Plugins\PluginSample.dl_">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="DB\exp_table.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\skilltimer.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Plugins\Readme.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Forms\FormAutofeed.de.resx">
+      <DependentUpon>FormAutofeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAutofeed.en.resx">
+      <DependentUpon>FormAutofeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAutofeed.resx">
+      <DependentUpon>FormAutofeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharState.de.resx">
+      <DependentUpon>FormCharState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharState.en.resx">
+      <DependentUpon>FormCharState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharState.resx">
+      <DependentUpon>FormCharState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormExpCounter.de.resx">
+      <DependentUpon>FormExpCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormExpCounter.en.resx">
+      <DependentUpon>FormExpCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormExpCounter.resx">
+      <DependentUpon>FormExpCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacroAction.de.resx">
+      <DependentUpon>FormMacroAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacroAction.en.resx">
+      <DependentUpon>FormMacroAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacroAction.resx">
+      <DependentUpon>FormMacroAction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacro.de.resx">
+      <DependentUpon>FormMacro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacro.en.resx">
+      <DependentUpon>FormMacro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacro.resx">
+      <DependentUpon>FormMacro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacros.de.resx">
+      <DependentUpon>FormMacros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacros.en.resx">
+      <DependentUpon>FormMacros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacros.resx">
+      <DependentUpon>FormMacros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddSkillTimer.de.resx">
+      <DependentUpon>FormAddSkillTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddSkillTimer.en.resx">
+      <DependentUpon>FormAddSkillTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharCalculator.de.resx">
+      <DependentUpon>FormCharCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharCalculator.en.resx">
+      <DependentUpon>FormCharCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharCalculator.resx">
+      <DependentUpon>FormCharCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharts.de.resx">
+      <DependentUpon>FormCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharts.en.resx">
+      <DependentUpon>FormCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCharts.resx">
+      <DependentUpon>FormCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChooseClient.de.resx">
+      <DependentUpon>FormChooseClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChooseClient.en.resx">
+      <DependentUpon>FormChooseClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormChooseClient.resx">
+      <DependentUpon>FormChooseClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHomunculus.de.resx">
+      <DependentUpon>FormHomunculus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHomunculus.en.resx">
+      <DependentUpon>FormHomunculus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHomunculus.resx">
+      <DependentUpon>FormHomunculus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.de.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.en.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMinimized.de.resx">
+      <DependentUpon>FormMinimized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMinimized.en.resx">
+      <DependentUpon>FormMinimized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMinimized.resx">
+      <DependentUpon>FormMinimized.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMobs.de.resx">
+      <DependentUpon>FormMobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMobs.en.resx">
+      <DependentUpon>FormMobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMobs.resx">
+      <DependentUpon>FormMobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddSkillTimer.resx">
+      <DependentUpon>FormAddSkillTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormParty.de.resx">
+      <DependentUpon>FormParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormParty.en.resx">
+      <DependentUpon>FormParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormParty.resx">
+      <DependentUpon>FormParty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacroExecution.de.resx">
+      <DependentUpon>FormMacroExecution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacroExecution.en.resx">
+      <DependentUpon>FormMacroExecution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMacroExecution.resx">
+      <DependentUpon>FormMacroExecution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPet.de.resx">
+      <DependentUpon>FormPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPet.en.resx">
+      <DependentUpon>FormPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPet.resx">
+      <DependentUpon>FormPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSettings.de.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSettings.en.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSkillTimer.de.resx">
+      <DependentUpon>FormSkillTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSkillTimer.en.resx">
+      <DependentUpon>FormSkillTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSkillTimer.resx">
+      <DependentUpon>FormSkillTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="DB\maps.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Strings.de.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.de.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\clients.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DB\job_cls.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DB\mob_db.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rowatch2.Plugin\Rowatch2.Plugin.csproj">
+      <Project>{dd99eb6a-739a-4699-a761-23282e83ac58}</Project>
+      <Name>Rowatch2.Plugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServerRessources\ServerRessources.csproj">
+      <Project>{e5f22bde-cc06-4dbd-8206-e19cfdf5ad50}</Project>
+      <Name>ServerRessources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

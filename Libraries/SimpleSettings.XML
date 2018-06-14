@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleSettings</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleSettings.Settings">
+            <summary>
+            Dient zur Verwaltung von Programmeinstellungen über Xml.
+            </summary>
+        </member>
+        <member name="M:SimpleSettings.Settings.#ctor(System.String)">
+            <summary>
+            Öffnet eine Datei zur Verwendung.
+            </summary>
+            <param name="file">Pfad zur Datei.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.Save">
+            <summary>
+            Speichert die Einstellungen.
+            </summary>
+        </member>
+        <member name="M:SimpleSettings.Settings.Save(System.String)">
+            <summary>
+            Speichert die Einstellungen an einen bestimmten Pfad.
+            </summary>
+            <param name="file">Der Pfad an dem gespeichert werden soll.</param>
+        </member>
+        <member name="P:SimpleSettings.Settings.Path">
+            <summary>
+            Liefert den Pfad, unter dem die Einstellungen gespeichert werden.
+            </summary>
+        </member>
+        <member name="P:SimpleSettings.Settings.GroupCount">
+            <summary>
+            Liefert die Anzahl an Gruppen.
+            </summary>
+        </member>
+        <member name="P:SimpleSettings.Settings.KeyCount">
+            <summary>
+            Liefert die Anzahl an Werten, der aktuellen Gruppe.
+            </summary>
+        </member>
+        <member name="P:SimpleSettings.Settings.ValueTypes">
+            <summary>
+            Liefert einen Wert, der angibt, ob bei Werten der Datentyp abgespeichert wird.
+            </summary>
+        </member>
+        <member name="M:SimpleSettings.Settings.SetGroup(System.String)">
+            <summary>
+            Wechselt die Gruppe, in der Werte geschrieben und gelesen werden.
+            Sollte die Gruppe nicht existieren, wird sie automatisch erstellt.
+            </summary>
+            <param name="name">Name der Gruppe.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.AddGroup(System.String)">
+            <summary>
+            Fügt eine neue Gruppe hinzu.
+            Die aktuelle Gruppe bleibt erhalten.
+            </summary>
+            <param name="name">Name der neu zu erstellenden Gruppe.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.RemoveGroup(System.String)">
+            <summary>
+            Entfernt eine Gruppe mit allen darin befindlichen Werten.
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:SimpleSettings.Settings.RemoveKey(System.String)">
+            <summary>
+            Entfernt den angegebenen Wert aus der Gruppe.
+            </summary>
+            <param name="key">Name des zu entfernenden Wertes.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.RemoveGroupKey(System.String,System.String)">
+            <summary>
+            Entfernt einen Wert aus der angegebenen Gruppe.
+            </summary>
+            <param name="group">Name der Gruppe, die den Wert enthällt.</param>
+            <param name="key">Name des Wertes, der entfernt werden soll.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.Clear">
+            <summary>
+            Entfernt sämtliche Gruppen und deren Werte.
+            </summary>
+        </member>
+        <member name="M:SimpleSettings.Settings.ClearGroup(System.String)">
+            <summary>
+            Entfern alle Werte einer Gruppe. Die Gruppe selbst bleibt jedoch erhalten.
+            </summary>
+            <param name="name">Name der zu leerenden Gruppe.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.String)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Boolean)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Byte)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.SByte)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Int16)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.UInt16)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Int32)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.UInt32)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Int64)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.UInt64)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Double)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Single)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.Decimal)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.DateTime)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteValue(System.String,System.TimeSpan)">
+            <summary>
+            Schreibt einen Wert, oder ändert ihn falls dieser bereits existiert.
+            </summary>
+            <param name="key">Name des Schlüssels, in dem der Wert geschrieben wird.</param>
+            <param name="value">Zu schreibender Wert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.String)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Boolean)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Byte)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.SByte)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Int16)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.UInt16)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Int32)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.UInt32)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Int64)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.UInt64)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Double)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Single)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.Decimal)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.DateTime)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.WriteAttribute(System.String,System.String,System.TimeSpan)">
+            <summary>
+            Schreibt einen Attributswert in einen Wert, falls dieser nicht exisitert, wird er automatisch erstellt.
+            </summary>
+            <param name="key">Name des Wertes</param>
+            <param name="attribute">Name des Attributes</param>
+            <param name="value">Wert des Attributes</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueString(System.String,System.String)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueBool(System.String,System.Boolean)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueByte(System.String,System.Byte)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueSByte(System.String,System.SByte)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueShort(System.String,System.Int16)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueUShort(System.String,System.UInt16)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueInt(System.String,System.Int32)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueUInt(System.String,System.UInt32)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueLong(System.String,System.Int64)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueULong(System.String,System.UInt64)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueDouble(System.String,System.Double)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueFloat(System.String,System.Single)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueDecimal(System.String,System.Decimal)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueDateTime(System.String,System.DateTime)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadValueTimeSpan(System.String,System.TimeSpan)">
+            <summary>
+            Liest einen Wert, falls dieser nicht existiert, wird der Standardwert zurückgegeben.
+            </summary>
+            <param name="key">Name des Schlüssels, der den Wert enthält.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, solange der Schlüssel nicht exisitert.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadAttributeString(System.String,System.String,System.String)">
+            <summary>
+            Liest einen Attributswert eines Wertes aus, oder gibt den Standardwert zurück, falls dieser nicht existiert.
+            </summary>
+            <param name="key">Name des Wertes, der das Attribut beinhaltet.</param>
+            <param name="attribute">Name des Attributes, welches den Wert beinhaltet.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, falls der Wert bzw. das Attribute nicht existert, oder Fehler auftreten.</param>
+        </member>
+        <member name="M:SimpleSettings.Settings.ReadAttributeFloat(System.String,System.String,System.Single)">
+            <summary>
+            Liest einen Attributswert eines Wertes aus, oder gibt den Standardwert zurück, falls dieser nicht existiert.
+            </summary>
+            <param name="key">Name des Wertes, der das Attribut beinhaltet.</param>
+            <param name="attribute">Name des Attributes, welches den Wert beinhaltet.</param>
+            <param name="defaultvalue">Standardwert der zurückgegeben wird, falls der Wert bzw. das Attribute nicht existert, oder Fehler auftreten.</param>
+        </member>
+    </members>
+</doc>
